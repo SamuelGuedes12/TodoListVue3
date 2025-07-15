@@ -10,6 +10,7 @@
     <v-list-item
       v-for="taskList, index in taskStore.tasks"
       :key="index"
+      :subtitle="taskList.description"
       :title="taskList.title"
       :value="index"
       @click="taskStore.toggleDoneTask(index)"
